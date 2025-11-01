@@ -129,10 +129,10 @@ Total Delivery = SUM('Ngày giao hàng- nhập kho'[On time]) + SUM('Ngày giao 
 ### % OTIF
 
 ```DAX
-% OTIF = 1 - DIVIDE(SUM('Ngày giao hàng- nhập kho'[Delay]), [Total Delivery])
+% OTD = 1 - DIVIDE(SUM('Ngày giao hàng- nhập kho'[Delay]), [Total Delivery])
 ```
 
-**Giải thích:** Tỉ lệ giao hàng đúng hạn (On-Time In-Full), cho biết phần trăm đơn hàng được giao đúng thời hạn.
+**Giải thích:** Tỉ lệ giao hàng đúng hạn (On-Time Delivery), cho biết phần trăm đơn hàng được giao đúng thời hạn.
 
 ````
 
