@@ -90,7 +90,7 @@ CALCULATE(
 )
 ```
 
-**Giải thích:** Tổng thời gian ngưng máy không bao gồm giờ nghỉ.
+**Giải thích:** Tổng thời gian ngưng máy không bao gồm giờ nghỉ giải lao, ăn cơm.
 
 ---
 
