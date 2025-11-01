@@ -1,9 +1,4 @@
-Tốt 👌
-Dưới đây là bản **Markdown chuẩn cho GitHub**, bạn chỉ cần **copy toàn bộ** và dán vào file `README.md` hoặc file riêng (ví dụ `DAX_Formulas.md`) là hiển thị đẹp gọn, code rõ ràng từng khối, dễ đọc và chuyên nghiệp.
 
----
-
-````markdown
 # 📊 DAX Formulas & Giải thích
 
 ---
