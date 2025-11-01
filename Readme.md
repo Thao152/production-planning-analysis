@@ -48,11 +48,11 @@ Phân tích được chia thành nhiều module, mỗi module phản ánh một 
 
 | Module | Mục tiêu phân tích | File |
 |---------|--------------------|------|
-| 1️⃣ **Delay Analysis** | Phân tích chênh lệch giữa kế hoạch và thực tế sản xuất | [`01.Delay_Analysis.md`](./01.Delay_Analysis.md) |
-| 2️⃣ **Downtime Analysis** | Xác định nguyên nhân ngưng máy và mức độ ảnh hưởng | [`02.Downtime_Analysis.md`](./02.Downtime_Analysis.md) |
-| 3️⃣ **Machine Utilization** | Đánh giá hiệu suất sử dụng máy móc theo thời gian | [`03.Machine_Utilization.md`](./03.Machine_Utilization.md) |
-| 4️⃣ **OTD Analysis** | Phân tích tỷ lệ giao hàng đúng hạn (On-time Delivery) | [`04.OTD_Analysis.md`](./04.OTD_Analysis.md) |
-| 5️⃣ **Capacity Analysis** | Đánh giá năng lực sản xuất và giới hạn công suất nhà máy | [`05.Capacity_Analysis.md`](./05.Capacity_Analysis.md) |
+| 1️⃣ **Delay Analysis** | Phân tích chênh lệch giữa kế hoạch và thực tế sản xuất | [`01.Delay Analysis.md`](./01.Delay20%Analysis.md) |
+| 2️⃣ **Downtime Analysis** | Xác định nguyên nhân ngưng máy và mức độ ảnh hưởng | [`02.Downtime Analysis.md`](./02.Downtime20%Analysis.md) |
+| 3️⃣ **Machine Utilization** | Đánh giá hiệu suất sử dụng máy móc theo thời gian | [`03.Machine Utilization Analysis.md`](./03.Machine20%Utilization20%Analysis.md) |
+| 4️⃣ **OTD Analysis** | Phân tích tỷ lệ giao hàng đúng hạn (On-time Delivery) | [`04.OTD Analysis.md`](./04.OTD20%Analysis.md) |
+| 5️⃣ **Capacity Analysis** | Đánh giá năng lực sản xuất và giới hạn công suất nhà máy | [`05.Capacity_Analysis.md`](./05.Capacity20%Analysis.md) |
 
 ---
 
