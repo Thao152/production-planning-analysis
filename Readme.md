@@ -113,8 +113,8 @@ Tuy nhiên, thực tế cho thấy máy ít được vận hành kịp thời do
 ---
 
 ## 🔍 Phân tích chi tiết
-- [Phân tích trễ kế hoạch (Delay Analysis)](analysis/Delay_Analysis.md)  
-- [Phân tích hiệu suất máy (Machine Utilization)](analysis/Utilization_Analysis.md)  
+- [Phân tích trễ kế hoạch (Delay Analysis)]((https://github.com/Thao152/production-planning-analysis/blob/main/01.Delay%20Analysis.md))  
+- [Phân tích hiệu suất máy (Machine Utilization)]([analysis/Utilization_Analysis.md](https://github.com/Thao152/production-planning-analysis/blob/main/02.Downtime%20Analysis.md))  
 - [Phân tích downtime (Downtime Analysis)](analysis/Downtime_Analysis.md)  
 - [Phân tích giao hàng đúng hạn (OTD Analysis)](analysis/OTD_Analysis.md)
 
