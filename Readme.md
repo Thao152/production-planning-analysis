@@ -88,7 +88,7 @@ Cơ chế cảnh báo sớm này hỗ trợ đáng kể trong việc **phòng ng
 ---
 
 ## 🔗 Dashboard Power BI
-👉 [Xem Dashboard Power BI (Read-only)](https://your-link-here)
+👉 [Xem Dashboard Power BI](https://github.com/Thao152/production-planning-analysis/blob/main/Report%20Plan.pbix)
 
 ---
 
