@@ -29,8 +29,61 @@ Gồm các bảng:
 | **On-time Delivery (OTIF)** | Tỷ lệ đơn hàng giao đúng hạn | 99.9% (chỉ 1 đơn trễ) |
 
 ---
+## 🧭 4. Phương pháp phân tích (Methodology Introduction)
 
-## 📊 4. Dashboard & Phát hiện chính (Key Findings)
+Dự án được thực hiện theo **khung phân tích hiệu suất sản xuất (Manufacturing Performance Analysis Framework)** — một phương pháp dựa trên KPI, kết hợp giữa **phân tích dữ liệu vận hành**, **trực quan hóa bằng Power BI**, và **đánh giá nguyên nhân gốc (Root Cause Analysis)**.  
+
+Phương pháp này giúp nhà máy:
+- **Đo lường mức độ tuân thủ kế hoạch sản xuất** (Plan Adherence, Delay).  
+- **Phân tích downtime máy móc và nhân sự** để xác định điểm nghẽn.  
+- **Đánh giá hiệu suất sử dụng máy móc (Machine Utilization)** và năng lực nhà máy.  
+- **Theo dõi tỷ lệ giao hàng đúng hạn (On-time Delivery – OTD)** và phát hiện sớm rủi ro tiềm ẩn.  
+- **Đưa ra khuyến nghị cải tiến vận hành** dựa trên dữ liệu thực tế.  
+
+---
+
+### ⚙️ Cấu trúc phân tích
+
+Phân tích được chia thành nhiều module, mỗi module phản ánh một nhóm chỉ số hiệu suất chính (KPI):
+
+| Module | Mục tiêu phân tích | File |
+|---------|--------------------|------|
+| 1️⃣ **Delay Analysis** | Phân tích chênh lệch giữa kế hoạch và thực tế sản xuất | [`01.Delay_Analysis.md`](./01.Delay_Analysis.md) |
+| 2️⃣ **Downtime Analysis** | Xác định nguyên nhân ngưng máy và mức độ ảnh hưởng | [`02.Downtime_Analysis.md`](./02.Downtime_Analysis.md) |
+| 3️⃣ **Machine Utilization** | Đánh giá hiệu suất sử dụng máy móc theo thời gian | [`03.Machine_Utilization.md`](./03.Machine_Utilization.md) |
+| 4️⃣ **OTD Analysis** | Phân tích tỷ lệ giao hàng đúng hạn (On-time Delivery) | [`04.OTD_Analysis.md`](./04.OTD_Analysis.md) |
+| 5️⃣ **Capacity Analysis** | Đánh giá năng lực sản xuất và giới hạn công suất nhà máy | [`05.Capacity_Analysis.md`](./05.Capacity_Analysis.md) |
+
+---
+
+### 🔍 Quy trình triển khai
+
+1. **Thu thập & xử lý dữ liệu**  
+   - Nguồn: Google Sheets nội bộ (10 tháng gần nhất).  
+   - Chuẩn hóa định dạng và thống nhất mã máy, sản phẩm, đơn hàng.  
+
+2. **Thiết kế mô hình dữ liệu (Data Modeling)**  
+   - Liên kết các bảng: *Kế hoạch sản xuất*, *Thực tế sản xuất*, *Downtime*, *Đơn hàng*.  
+   - Xây dựng quan hệ 1-n giữa các bảng chính để tạo nền tảng cho phân tích KPI.  
+
+3. **Xây dựng KPI bằng DAX**  
+   - Plan Adherence (%), Delay Rate (%), Downtime (%), OTD (%).  
+   - Các measure được tối ưu để cho phép lọc theo tháng, máy, hoặc khách hàng.  
+
+4. **Trực quan hóa (Visualization)**  
+   - Sử dụng Power BI để biểu diễn xu hướng, so sánh và phát hiện bất thường.  
+   - Dashboard được thiết kế dạng tương tác (drill-down) giúp người dùng phân tích sâu.  
+
+5. **Phân tích nguyên nhân & đề xuất cải tiến (Root Cause & Recommendation)**  
+   - Xác định máy hoặc nhóm sản phẩm có hiệu suất thấp.  
+   - Phân tích theo thời gian, nguyên nhân downtime, và đặc thù khách hàng.  
+   - Đề xuất hướng cải thiện dựa trên dữ liệu thực tế.  
+
+> 📊 Toàn bộ quá trình được triển khai bằng **Power BI + DAX + Data Modeling**, kết hợp phân tích định lượng và định tính để đảm bảo tính chính xác và khả năng ứng dụng trong thực tế sản xuất.
+
+---
+
+## 📊 5. Dashboard & Phát hiện chính (Key Findings)
 
 ### 🔹 1. Production Quantity Analysis
 - Tổng sản lượng kế hoạch với sản phẩm ống đạt **62.6M**, so với công suất tối đa **72M**.  
@@ -81,14 +134,14 @@ Tuy nhiên, thực tế cho thấy máy ít được vận hành kịp thời do
 - Đánh giá mức tồn kho an toàn tối thiểu (safety stock) cho từng nhóm khách hàng để hạn chế rủi ro trễ khi khối lượng tăng đột biến.
 ---
 
-## 🧠 5. Công cụ & Phương pháp (Tools & Methods)
+## 🧠 6. Công cụ & Phương pháp (Tools & Methods)
 - **Power BI** – trực quan hóa dữ liệu & dashboard tổng hợp  
 - **Google Sheets** – xử lý & chuẩn hóa dữ liệu gốc  
 - **DAX** – xây dựng measure KPI (Plan Adherence, Delay, OTD, v.v.)  
 - **Data Modeling** – ghép bảng kế hoạch, thực tế và đơn hàng  
 
 ---
-## ✅ 6. Kết luận & Đề xuất (Insights & Recommendations)
+## ✅ 7. Kết luận & Đề xuất (Insights & Recommendations)
 
 - **Hiệu suất sản xuất** duy trì ổn định (Plan Adherence > 95%).  
 - Cần theo dõi **downtime tăng** ở một số máy (đặc biệt nhóm SC).  
