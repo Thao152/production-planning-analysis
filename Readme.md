@@ -138,7 +138,7 @@ Tuy nhiên, thực tế cho thấy máy ít được vận hành kịp thời do
 - Downtime tăng mạnh ở **tháng 8–10**, đặc biệt ở **MC SC06, SC03, SC04**.  
 - Riêng **tháng 10**, downtime do **thiếu nhân lực** chiếm **30% tổng thời gian ngừng máy**, cho thấy ảnh hưởng đáng kể từ thiếu hụt nhân sự tạm thời.
 
-> Lưu ý: Trong báo cáo này, **Delay Time** được hiểu là phần thời gian trễ so với kế hoạch sản xuất. 
+> Lưu ý: Trong báo cáo này, **Delay Time** được hiểu là phần thời gian trễ so với kế hoạch sản xuất, 
 > trong khi **Downtime** phản ánh thời gian máy ngừng hoạt động do các nguyên nhân kỹ thuật hoặc vận hành.  
 > Hai chỉ số này được phân tích độc lập để xác định mối liên hệ giữa **nguyên nhân (downtime)** và **hậu quả (delay)**.
 
