@@ -60,7 +60,15 @@ Phân tích được chia thành nhiều module, mỗi module phản ánh một 
 
 1. **Thu thập & xử lý dữ liệu**  
    - Nguồn: Google Sheets nội bộ (10 tháng gần nhất).  
-   - Chuẩn hóa định dạng và thống nhất mã máy, sản phẩm, đơn hàng.  
+   - Chuẩn hóa dữ liệu đầu vào
+      + Loại bỏ các dòng trống, dữ liệu lỗi hoặc đơn hàng test.
+      + Chuẩn hóa định dạng ngày (`yyyy-mm-dd`), mã máy, mã sản phẩm.
+      + Kiểm tra trùng lặp giữa **WO (Work Order)** và **Order ID**.
+      + Phát hiện và đánh dấu các giá trị **outlier** để kiểm tra lại thủ công  
+  (do đây là dữ liệu sản xuất thực tế, việc loại bỏ hoàn toàn có thể gây sai lệch kết quả).
+
+   - Xử lý dữ liệu thiếu
+      + Thay thế giá trị null trong downtime hoặc actual quantity bằng 0.
 
 2. **Thiết kế mô hình dữ liệu (Data Modeling)**  
    - Liên kết các bảng: *Kế hoạch sản xuất*, *Thực tế sản xuất*, *Downtime*, *Đơn hàng*.  
