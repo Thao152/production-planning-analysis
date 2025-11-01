@@ -33,16 +33,16 @@ Gồm các bảng:
 ## 📊 4. Dashboard & Phát hiện chính (Key Findings)
 
 ### 🔹 1. Production Quantity Analysis
-- Tổng sản lượng kế hoạch với sản phẩm ống đạt **63.2M**, so với công suất tối đa **72M**.  
-- Sản lượng thực tế đạt **62M** (≈ 98% kế hoạch) → mức tuân thủ rất tốt.  
+- Tổng sản lượng kế hoạch với sản phẩm ống đạt **62.6M**, so với công suất tối đa **72M**.  
+- Sản lượng thực tế đạt **62M** (≈ 99% kế hoạch) → mức tuân thủ rất tốt.  
 - Giai đoạn tháng 4 - tháng 7 sản lượng giảm mạnh do **nhu cầu đặt hàng của khách giảm**, trong khi **khả năng lưu kho hạn chế** khiến nhà máy **không thể sản xuất vượt nhu cầu thực tế**.  
 - 👉 **Đề xuất:** Xem xét **mở rộng kho lưu trữ** hoặc **đa dạng hóa khách hàng trong mùa thấp điểm** để duy trì sản lượng ổn định.
 ### 🔹 2. Delay Time Analysis
 - Tổng thời gian trễ: **-3.92K giờ (~ -6.35%)**.  
 - Tháng 9 ghi nhận chênh lệch cao nhất (**-842 giờ, -14%**).  
-- Các máy **PG02, SC04, SC01** có tỷ lệ delay cao nhất (>9%)
+- Các máy **PG02, SC04** có tỷ lệ delay cao nhất (>9%)
 - Phân tích:
-  + SC01 và SC04 thường chạy full công suất để đáp ứng các đơn hàng đặc thù, nên không thể phân bổ sang máy khác.
+  + SC04 thường chạy full công suất để đáp ứng các đơn hàng đặc thù, nên không thể phân bổ sang máy khác.
 Trong giai đoạn đầu năm, khách hàng chủ yếu đặt các sản phẩm tiêu chuẩn, dễ gia công, nên tiến độ được đảm bảo.
 Tuy nhiên, từ giữa năm trở đi, tỷ lệ sản phẩm phức tạp và yêu cầu kỹ thuật cao tăng, khiến máy phải dừng thường xuyên để tinh chỉnh, kiểm tra chất lượng, dẫn đến delay tăng đáng kể.
   + PG02 là máy backup, được kích hoạt khi máy chính gặp sự cố hoặc cần bù tiến độ.
@@ -58,16 +58,16 @@ Tuy nhiên, thực tế cho thấy máy ít được vận hành kịp thời do
 
 - Rà soát quy trình kích hoạt máy backup (PG02) và bố trí nhân lực dự phòng trong giai đoạn cao điểm để đảm bảo máy backup hoạt động hiệu quả.
 ### 🔹 3. Downtime Analysis
-- Tổng downtime: **1.47K giờ (10.6%)**.  
+- Tổng downtime: **5.12K giờ (7.65%)**.  
 - Nguyên nhân chính:
-  - Machine issue: **46%**
-  - Setup: **20%**
-  - Thiếu nhân lực: **12%**
+  - Machine issue: **38%**
+  - Thiếu nhân lực: **20%**
+  - PM: **20%**
 - Downtime tăng mạnh ở **tháng 8–10**, đặc biệt ở **MC SC06, SC03, SC04**.  
-- Riêng **tháng 10**, downtime do **thiếu nhân lực** chiếm **27% tổng thời gian ngừng máy**, cho thấy ảnh hưởng đáng kể từ thiếu hụt nhân sự tạm thời.
+- Riêng **tháng 10**, downtime do **thiếu nhân lực** chiếm **30% tổng thời gian ngừng máy**, cho thấy ảnh hưởng đáng kể từ thiếu hụt nhân sự tạm thời.
 
 ### 🔹 4. On-time Delivery Analysis
-- Tổng đơn giao: **839**, chỉ **1 đơn trễ** → **OTD = 99.9%**.  
+- Tổng đơn giao: **837**, chỉ **1 đơn trễ** → **OTD = 99.9%**.  
 - Khách hàng **QHA** có sản lượng lớn nhất → cần theo dõi sát do khối lượng cao.  
 - Biểu đồ **Total Work Orders in Storage < 1 Day (by Customer)** phản ánh các đơn hàng có thời gian lưu kho dưới 1 ngày — tức là sản xuất và xuất hàng gần như liên tục, không có tồn đệm.
 
