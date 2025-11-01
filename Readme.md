@@ -145,8 +145,7 @@ Tuy nhiên, thực tế cho thấy máy ít được vận hành kịp thời do
 
 - **Hiệu suất sản xuất** duy trì ổn định (Plan Adherence > 95%).  
 - Cần theo dõi **downtime tăng** ở một số máy (đặc biệt nhóm SC).  
-- **Nguyên nhân Setup (20%)** cần được phân tích sâu hơn → có thể tối ưu bằng **kế hoạch batch sản phẩm tương đồng**.  
-- **Thiếu nhân lực** là yếu tố ảnh hưởng đáng kể đến tiến độ sản xuất, đặc biệt trong tháng 10 khi chiếm tới 27% tổng downtime.  
+- **Thiếu nhân lực** là yếu tố ảnh hưởng đáng kể đến tiến độ sản xuất, đặc biệt trong tháng 10 khi chiếm tới 30% tổng downtime.  
   Nguyên nhân chủ yếu đến từ việc **công ty sử dụng lao động thời vụ**, khiến **giai đoạn cao điểm dễ xảy ra thiếu hụt nhân sự**, dù kế hoạch máy móc đã được cân đối hợp lý.  
   Tình trạng này kéo dài làm giảm khả năng phản ứng linh hoạt khi phát sinh sự cố hoặc cần tăng ca bù sản lượng.  
 - **OTD đạt 99.9%** → quy trình giao hàng và kiểm soát tiến độ vẫn hoạt động rất hiệu quả.
