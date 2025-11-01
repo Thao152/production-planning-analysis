@@ -110,13 +110,20 @@ Tuy nhiên, thực tế cho thấy máy ít được vận hành kịp thời do
 ## 🔗 Dashboard Power BI
 👉 [Xem Dashboard Power BI](https://github.com/Thao152/production-planning-analysis/blob/main/Report%20Plan.pbix)
 
+📁 Tải Power BI file: [Report Plan.pbix](./Report%20Plan.pbix)
+
 ---
 
 ## 🔍 Phân tích chi tiết
-- [Phân tích trễ kế hoạch (Delay Analysis)]((https://github.com/Thao152/production-planning-analysis/blob/main/01.Delay%20Analysis.md))  
-- [Phân tích hiệu suất máy (Machine Utilization)]([analysis/Utilization_Analysis.md](https://github.com/Thao152/production-planning-analysis/blob/main/02.Downtime%20Analysis.md))  
-- [Phân tích downtime (Downtime Analysis)](analysis/Downtime_Analysis.md)  
-- [Phân tích giao hàng đúng hạn (OTD Analysis)](analysis/OTD_Analysis.md)
+1. [Delay Analysis](./01.Delay%20Analysis.md)
+2. [Downtime Analysis](./02.Downtime%20Analysis.md)
+3. [Machine Utilization Analysis](./03.Machine%20Utilization%20Analysis.md)
+4. [OTD Analysis](./04.OTD%20analysis.md)
+5. [Capacity Analysis](./05.%20Capacity%20Analysis.md)
+
+---
+
+📁 Tải Power BI file: [Report Plan.pbix](./Report%20Plan.pbix)
 
 ---
 
