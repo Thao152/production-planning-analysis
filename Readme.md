@@ -108,7 +108,6 @@ Tuy nhiên, thực tế cho thấy máy ít được vận hành kịp thời do
 ---
 
 ## 🔗 Dashboard Power BI
-👉 [Xem Dashboard Power BI](https://github.com/Thao152/production-planning-analysis/blob/main/Report%20Plan.pbix)
 
 📁 Tải Power BI file: [Report Plan.pbix](./Report%20Plan.pbix)
 
@@ -121,9 +120,6 @@ Tuy nhiên, thực tế cho thấy máy ít được vận hành kịp thời do
 4. [OTD Analysis](./04.OTD%20analysis.md)
 5. [Capacity Analysis](./05.%20Capacity%20Analysis.md)
 
----
-
-📁 Tải Power BI file: [Report Plan.pbix](./Report%20Plan.pbix)
 
 ---
 
