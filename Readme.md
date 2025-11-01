@@ -113,7 +113,8 @@ Tuy nhiên, thực tế cho thấy máy ít được vận hành kịp thời do
 
 ---
 ## Dax Formulas
-(/DAX_formulas.md).
+👉 Xem chi tiết các công thức DAX tại [DAX_formulas.md](./DAX_formulas.md)
+
 
 ## 🔍 Phân tích chi tiết
 1. [Delay Analysis](./01.Delay%20Analysis.md)
