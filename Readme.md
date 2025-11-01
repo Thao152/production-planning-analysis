@@ -112,6 +112,8 @@ Tuy nhiên, thực tế cho thấy máy ít được vận hành kịp thời do
 📁 Tải Power BI file: [Report Plan.pbix](./Report%20Plan.pbix)
 
 ---
+## Dax Formulas
+(/DAX_formulas.md).
 
 ## 🔍 Phân tích chi tiết
 1. [Delay Analysis](./01.Delay%20Analysis.md)
