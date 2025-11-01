@@ -1,0 +1,49 @@
+# 🚚 Phân tích chi tiết: Ontime Delivery (OTD Analysis)
+
+## 1️⃣ Tổng quan  
+
+Trong giai đoạn phân tích, tổng số đơn hàng giao: **839 đơn**, trong đó chỉ có **1 đơn bị trễ**, tương ứng với **tỷ lệ OTD đạt 99.9%** — mức rất cao, thể hiện hệ thống lập kế hoạch và phản hồi đơn hàng đang vận hành ổn định.  
+
+Tổng số lượng giao cho khách đạt gần **60M pcs**, trong đó **QHA** chiếm tỷ trọng lớn nhất (**~41M pcs, ~68% tổng sản lượng**).  
+
+---
+
+## 2️⃣ Phân tích theo khách hàng  
+
+| Khách hàng | Số lượng giao (pcs) | Số đơn trễ | Ghi chú |
+|-------------|---------------------|-------------|----------|
+| **QHA**     | 41M | 0 | Khách hàng chính, sản lượng lớn, kiểm soát tốt thời gian giao nhờ chuỗi sản xuất ổn định. |
+| **APEX TH**     | 15M | **1**| Đơn hàng trễ duy nhất: **WOSC32025039**, do máy móc hư hỏng đột xuất dài ngày → giao chậm 1 ngày. |
+| **ACC**     | 4M  | 0 | Sản xuất theo lô nhỏ, dễ điều phối. |
+| **MCC** | 2M  | 0 |Sản xuất theo lô nhỏ, dễ điều phối. |
+
+📦 **Tổng tỷ lệ trễ theo khách:**  
+> 99.9% on-time | 0.1% delayed  
+
+---
+
+## 3️⃣ Phân tích theo tháng  
+
+| Tháng | Số đơn giao trong kho < 1 ngày | Nhận xét |
+|-------|----------------|----------------|
+| **Tháng 1–2** | 7.7M–7.8M | Tỷ lệ luân chuyển cao, hàng ra khỏi kho nhanh (<1 ngày). |
+| **Tháng 5–8** | 5.1–7.6M | Giai đoạn thấp điểm, tuy nhiên máy móc hư hỏng đột xuất dẫn đến trễ 1 đơn hàng. |
+| **Tháng 10** | 8.5M | Đơn hàng tăng cao, tỉ lệ hàng ra khỏi kho nhanh (<1 ngày) đối với đơn hàng QHA. |
+
+⏱️ Hầu hết đơn hàng được lưu kho **<1 ngày**, thể hiện năng lực logistics và phối hợp xuất hàng tốt giữa các bộ phận.
+
+---
+
+## ✅ 4️⃣ Nhận xét & Đề xuất  
+
+### 💡 Điểm mạnh  
+- **OTIF đạt 99.9%**, vượt chuẩn KPI nội bộ (≥99%).  
+- **Tỷ lệ lưu kho <1 ngày cao**, phát hiện nguy cơ trễ lịch giao hàng.  
+- **Không có trễ hệ thống**, chỉ có **1 đơn đặc biệt** liên quan đến máy móc hư đột xuất dài ngày.  
+
+### ⚙️ Đề xuất  
+- Duy trì **cảnh báo sớm đơn hàng có nguy cơ trễ (delay > 0 ngày)**.  
+- Đưa nhóm khách hàng **APEX TH, QHA** vào danh mục cần theo dõi đặc biệt trong dashboard tháng tới.  
+- Kết hợp với **phân tích Delay và Downtime**, xác định chuỗi ảnh hưởng chéo giữa *trễ sản xuất – trễ giao hàng*.  
+
+---
