@@ -138,6 +138,16 @@ Tuy nhiên, thực tế cho thấy máy ít được vận hành kịp thời do
 - Downtime tăng mạnh ở **tháng 8–10**, đặc biệt ở **MC SC06, SC03, SC04**.  
 - Riêng **tháng 10**, downtime do **thiếu nhân lực** chiếm **30% tổng thời gian ngừng máy**, cho thấy ảnh hưởng đáng kể từ thiếu hụt nhân sự tạm thời.
 
+> Lưu ý: Trong báo cáo này, **Delay Time** được hiểu là phần thời gian trễ so với kế hoạch sản xuất. 
+> trong khi **Downtime** phản ánh thời gian máy ngừng hoạt động do các nguyên nhân kỹ thuật hoặc vận hành.  
+> Hai chỉ số này được phân tích độc lập để xác định mối liên hệ giữa **nguyên nhân (downtime)** và **hậu quả (delay)**.
+
+**Mối tương quan giữa Delay Time và Downtime:**
+
+Phân tích cho thấy các giai đoạn có **tỷ lệ downtime cao (tháng 8–10)** cũng là thời điểm **delay time tăng mạnh**.  
+Đặc biệt, downtime do **thiếu nhân lực và hư hỏng máy** chiếm hơn 50% tổng thời gian ngừng máy, là nguyên nhân chính khiến **kế hoạch bị trễ so với thực tế**.  
+Điều này khẳng định downtime không chỉ làm giảm hiệu suất máy mà còn ảnh hưởng trực tiếp đến **Plan Adherence** và **Ontime Delivery**.
+
 ### 🔹 4. On-time Delivery Analysis
 - Tổng đơn giao: **837**, chỉ **1 đơn trễ** → **OTD = 99.9%**.  
 - Khách hàng **QHA** có sản lượng lớn nhất → cần theo dõi sát do đây là khách hàng chính, sản lượng cao.  
