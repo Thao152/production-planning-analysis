@@ -35,13 +35,28 @@ Gồm các bảng:
 ### 🔹 1. Production Quantity Analysis
 - Tổng sản lượng kế hoạch với sản phẩm ống đạt **63.2M**, so với công suất tối đa **72M**.  
 - Sản lượng thực tế đạt **62M** (≈ 98% kế hoạch) → mức tuân thủ rất tốt.  
-- Một số tháng (tháng 4, 5) sản lượng giảm mạnh → khả năng do **downtime** hoặc **thiếu nguyên liệu**.
-
+- Giai đoạn tháng 4 - tháng 7 sản lượng giảm mạnh do **nhu cầu đặt hàng của khách giảm**, trong khi **khả năng lưu kho hạn chế** khiến nhà máy **không thể sản xuất vượt nhu cầu thực tế**.  
+- 👉 **Đề xuất:** Xem xét **mở rộng kho lưu trữ** hoặc **đa dạng hóa khách hàng trong mùa thấp điểm** để duy trì sản lượng ổn định.
 ### 🔹 2. Delay Time Analysis
 - Tổng thời gian trễ: **-3.92K giờ (~ -6.35%)**.  
 - Tháng 9 ghi nhận chênh lệch cao nhất (**-842 giờ, -14%**).  
-- Các máy **PG02, SC04, SC01** có tỷ lệ delay cao nhất (>9%) → cần xem xét lại **phân bổ kế hoạch** và **setup**.
+- Các máy **PG02, SC04, SC01** có tỷ lệ delay cao nhất (>9%)
+- Phân tích:
+  + SC01 và SC04 thường chạy full công suất để đáp ứng các đơn hàng đặc thù, nên không thể phân bổ sang máy khác.
+Trong giai đoạn đầu năm, khách hàng chủ yếu đặt các sản phẩm tiêu chuẩn, dễ gia công, nên tiến độ được đảm bảo.
+Tuy nhiên, từ giữa năm trở đi, tỷ lệ sản phẩm phức tạp và yêu cầu kỹ thuật cao tăng, khiến máy phải dừng thường xuyên để tinh chỉnh, kiểm tra chất lượng, dẫn đến delay tăng đáng kể.
+  + PG02 là máy backup, được kích hoạt khi máy chính gặp sự cố hoặc cần bù tiến độ.
+Tuy nhiên, thực tế cho thấy máy ít được vận hành kịp thời do thiếu nhân lực và chưa có quy trình rõ ràng về việc kích hoạt máy dự phòng, dẫn đến delay cục bộ trong giai đoạn cao điểm.
 
+👉 **Đề xuất:**
+
+- Tăng cường bảo trì phòng ngừa (Preventive Maintenance) cho nhóm máy chạy full load (SC01, SC04).
+
+- Theo dõi xu hướng delay theo độ phức tạp sản phẩm để lập kế hoạch hợp lý hơn.
+
+- Thiết lập cảnh báo sớm khi thời gian tinh chỉnh vượt ngưỡng cho phép.
+
+- Rà soát quy trình kích hoạt máy backup (PG02) và bố trí nhân lực dự phòng trong giai đoạn cao điểm để đảm bảo máy backup hoạt động hiệu quả.
 ### 🔹 3. Downtime Analysis
 - Tổng downtime: **1.47K giờ (10.6%)**.  
 - Nguyên nhân chính:
