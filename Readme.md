@@ -71,11 +71,20 @@ Phân tích được chia thành nhiều module, mỗi module phản ánh một 
       + Thay thế giá trị null trong downtime hoặc actual quantity bằng 0.
 
 2. **Thiết kế mô hình dữ liệu (Data Modeling)**  
-   - Liên kết các bảng: *Kế hoạch sản xuất*, *Thực tế sản xuất*, *Downtime*, *Đơn hàng*.  
-   - Xây dựng quan hệ 1-n giữa các bảng chính để tạo nền tảng cho phân tích KPI.  
+ - Dữ liệu gốc gồm hơn **10 bảng (sheet)**, được nhóm và kết nối lại thành 4 nhóm chính:
+  1. **Production Plan** – dữ liệu kế hoạch sản xuất theo máy, sản phẩm và ngày.  
+  2. **Production Actuals** – sản lượng thực tế, thời gian thực tế, downtime.  
+  3. **Downtime Log** – lý do ngừng máy (Setup, Maintenance, Machine Issue, Thiếu nhân lực, v.v.).  
+  4. **Order & Delivery Data** – thông tin đơn hàng, khách hàng, ngày giao và sản lượng đặt.  
+
+- Các bảng được kết nối qua các trường khóa chính:
+  - `Machine_ID`
+  - `Work_Order`
+  - `Date`
+  - `Customer_Code`
 
 3. **Xây dựng KPI bằng DAX**  
-   - Plan Adherence (%), Delay Rate (%), Downtime (%), OTD (%).  
+   - Plan Adherence (%),Production Capacity Utilization(%), Delay Rate (%), Downtime (%), OTD (%).  
    - Các measure được tối ưu để cho phép lọc theo tháng, máy, hoặc khách hàng.  
 
 4. **Trực quan hóa (Visualization)**  
@@ -94,10 +103,12 @@ Phân tích được chia thành nhiều module, mỗi module phản ánh một 
 ## 📊 5. Dashboard & Phát hiện chính (Key Findings)
 
 ### 🔹 1. Production Quantity Analysis
-- Tổng sản lượng kế hoạch với sản phẩm ống đạt **62.6M**, so với công suất tối đa **72M**.  
+- Tổng sản lượng kế hoạch với sản phẩm ống đạt **62.6M**, so với **công suất tối đa 72M**, tương ứng **Production Capacity Utilization = 86%**.  
+  → Điều này cho thấy nhà máy hoạt động **gần ngưỡng tối ưu**, tuy nhiên vẫn còn khoảng **14% năng lực dư thừa** có thể khai thác khi nhu cầu tăng.
 - Sản lượng thực tế đạt **62M** (≈ 99% kế hoạch) → mức tuân thủ rất tốt.  
-- Giai đoạn tháng 4 - tháng 7 sản lượng giảm mạnh do **nhu cầu đặt hàng của khách giảm**, trong khi **khả năng lưu kho hạn chế** khiến nhà máy **không thể sản xuất vượt nhu cầu thực tế**.  
-- 👉 **Đề xuất:** Xem xét **mở rộng kho lưu trữ** hoặc **đa dạng hóa khách hàng trong mùa thấp điểm** để duy trì sản lượng ổn định.
+- Giai đoạn **tháng 4 - tháng 7** sản lượng giảm mạnh do **nhu cầu đặt hàng của khách hàng giảm**, trong khi **khả năng lưu kho hạn chế** khiến nhà máy **không thể sản xuất vượt nhu cầu thực tế**.  
+- 👉 **Đề xuất:** Xem xét **mở rộng kho lưu trữ** hoặc **đa dạng hóa khách hàng trong mùa thấp điểm** để **duy trì sản lượng ổn định và tận dụng tối đa năng lực sản xuất**.
+
 ### 🔹 2. Delay Time Analysis
 - Tổng thời gian trễ: **-3.92K giờ (~ -6.35%)**.  
 - Tháng 8 ghi nhận chênh lệch cao nhất (**-842 giờ, -14%**).  
@@ -129,7 +140,7 @@ Tuy nhiên, thực tế cho thấy máy ít được vận hành kịp thời do
 
 ### 🔹 4. On-time Delivery Analysis
 - Tổng đơn giao: **837**, chỉ **1 đơn trễ** → **OTD = 99.9%**.  
-- Khách hàng **QHA** có sản lượng lớn nhất → cần theo dõi sát do khối lượng cao.  
+- Khách hàng **QHA** có sản lượng lớn nhất → cần theo dõi sát do đây là khách hàng chính, sản lượng cao.  
 - Biểu đồ **Total Work Orders in Storage < 1 Day (by Customer)** phản ánh các đơn hàng có thời gian lưu kho dưới 1 ngày — tức là sản xuất và xuất hàng gần như liên tục, không có tồn đệm.
 
 - Đáng chú ý, trong tháng 10, khách hàng QHA chiếm 6.5 triệu sản phẩm, khiến có 9 đơn hàng chỉ lưu kho dưới 1 ngày trước khi giao. Điều này cho thấy áp lực giao hàng cao và mức tồn kho thành phẩm đang ở ngưỡng tối thiểu, dễ phát sinh rủi ro trễ nếu có sự cố bất ngờ trong sản xuất hoặc vận chuyển.
@@ -144,7 +155,7 @@ Tuy nhiên, thực tế cho thấy máy ít được vận hành kịp thời do
 
 ## 🧠 6. Công cụ & Phương pháp (Tools & Methods)
 - **Power BI** – trực quan hóa dữ liệu & dashboard tổng hợp  
-- **Google Sheets** – xử lý & chuẩn hóa dữ liệu gốc  
+- **Google Sheets, Power Query** – xử lý & chuẩn hóa dữ liệu gốc 
 - **DAX** – xây dựng measure KPI (Plan Adherence, Delay, OTD, v.v.)  
 - **Data Modeling** – ghép bảng kế hoạch, thực tế và đơn hàng  
 
