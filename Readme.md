@@ -92,7 +92,7 @@ Phân tích được chia thành nhiều module, mỗi module phản ánh một 
 - 👉 **Đề xuất:** Xem xét **mở rộng kho lưu trữ** hoặc **đa dạng hóa khách hàng trong mùa thấp điểm** để duy trì sản lượng ổn định.
 ### 🔹 2. Delay Time Analysis
 - Tổng thời gian trễ: **-3.92K giờ (~ -6.35%)**.  
-- Tháng 9 ghi nhận chênh lệch cao nhất (**-842 giờ, -14%**).  
+- Tháng 8 ghi nhận chênh lệch cao nhất (**-842 giờ, -14%**).  
 - Các máy **PG02, SC04** có tỷ lệ delay cao nhất (>9%)
 - Phân tích:
   + SC04 thường chạy full công suất để đáp ứng các đơn hàng đặc thù, nên không thể phân bổ sang máy khác.
@@ -115,7 +115,7 @@ Tuy nhiên, thực tế cho thấy máy ít được vận hành kịp thời do
 - Nguyên nhân chính:
   - Machine issue: **38%**
   - Thiếu nhân lực: **20%**
-  - PM: **20%**
+  - PM: **16%**
 - Downtime tăng mạnh ở **tháng 8–10**, đặc biệt ở **MC SC06, SC03, SC04**.  
 - Riêng **tháng 10**, downtime do **thiếu nhân lực** chiếm **30% tổng thời gian ngừng máy**, cho thấy ảnh hưởng đáng kể từ thiếu hụt nhân sự tạm thời.
 
