@@ -69,11 +69,16 @@ Tuy nhiên, thực tế cho thấy máy ít được vận hành kịp thời do
 ### 🔹 4. On-time Delivery Analysis
 - Tổng đơn giao: **839**, chỉ **1 đơn trễ** → **OTD = 99.9%**.  
 - Khách hàng **QHA** có sản lượng lớn nhất → cần theo dõi sát do khối lượng cao.  
-- Ngoài ra, biểu đồ **Total Work Orders in Storage < 1 Day (by Cus)** giúp theo dõi các đơn hàng có nguy cơ trễ cao.  
-Các đơn này được hệ thống đánh dấu để ưu tiên xử lý, nhằm đảm bảo duy trì tỷ lệ OTD ở mức gần tuyệt đối (99.9%).  
-Cơ chế cảnh báo sớm này hỗ trợ đáng kể trong việc **phòng ngừa trễ hàng**, thay vì chỉ phát hiện sau khi vi phạm lịch giao.
-- **Hệ thống cảnh báo sớm** đã giúp kiểm soát các đơn có thời gian lưu kho <1 ngày.
+- Biểu đồ **Total Work Orders in Storage < 1 Day (by Customer)** phản ánh các đơn hàng có thời gian lưu kho dưới 1 ngày — tức là sản xuất và xuất hàng gần như liên tục, không có tồn đệm.
 
+- Đáng chú ý, trong tháng 10, khách hàng QHA chiếm 6.5 triệu sản phẩm, khiến có 9 đơn hàng chỉ lưu kho dưới 1 ngày trước khi giao. Điều này cho thấy áp lực giao hàng cao và mức tồn kho thành phẩm đang ở ngưỡng tối thiểu, dễ phát sinh rủi ro trễ nếu có sự cố bất ngờ trong sản xuất hoặc vận chuyển.
+
+👉 **Đề xuất:**
+- Xem xét mở rộng năng lực lưu kho thành phẩm tạm thời cho nhóm khách hàng có sản lượng lớn (như QHA).
+
+- Phân bổ lịch giao hàng hợp lý hơn, tránh dồn sản lượng lớn vào cùng kỳ ngắn.
+
+- Đánh giá mức tồn kho an toàn tối thiểu (safety stock) cho từng nhóm khách hàng để hạn chế rủi ro trễ khi khối lượng tăng đột biến.
 ---
 
 ## 🧠 5. Công cụ & Phương pháp (Tools & Methods)
