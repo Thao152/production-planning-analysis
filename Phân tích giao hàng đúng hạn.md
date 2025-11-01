@@ -30,8 +30,6 @@ Tổng số lượng giao cho khách đạt gần **60M pcs**, trong đó **QHA*
 | **Tháng 5–8** | 5.1–7.6M | Giai đoạn thấp điểm, tuy nhiên máy móc hư hỏng đột xuất dẫn đến trễ 1 đơn hàng. |
 | **Tháng 10** | 8.5M | Đơn hàng tăng cao, tỉ lệ hàng ra khỏi kho nhanh (<1 ngày) đối với đơn hàng QHA. |
 
-⏱️ Hầu hết đơn hàng được lưu kho **<1 ngày**, thể hiện năng lực logistics và phối hợp xuất hàng tốt giữa các bộ phận.
-
 ---
 
 ## ✅ 4️⃣ Nhận xét & Đề xuất  
