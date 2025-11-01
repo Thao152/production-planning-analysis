@@ -23,9 +23,9 @@ Gồm các bảng:
 
 | Chỉ số | Diễn giải | Giá trị |
 |--------|------------|---------|
-| **Plan Adherence (%)** | Tỷ lệ sản lượng thực tế đạt so với kế hoạch | ≈ 98% |
+| **Plan Adherence (%)** | Tỷ lệ sản lượng thực tế đạt so với kế hoạch | ≈ 99% |
 | **Delay Time (%)** | Tỷ lệ thời gian trễ so với kế hoạch | ≈ -6.35% |
-| **Downtime (%)** | Thời gian ngừng máy trên tổng thời gian chạy | 10.6% |
+| **Downtime (%)** | Thời gian ngừng máy trên tổng thời gian chạy | 7.65% |
 | **On-time Delivery (OTIF)** | Tỷ lệ đơn hàng giao đúng hạn | 99.9% (chỉ 1 đơn trễ) |
 
 ---
@@ -72,7 +72,7 @@ Phân tích được chia thành nhiều module, mỗi module phản ánh một 
 
 4. **Trực quan hóa (Visualization)**  
    - Sử dụng Power BI để biểu diễn xu hướng, so sánh và phát hiện bất thường.  
-   - Dashboard được thiết kế dạng tương tác (drill-down) giúp người dùng phân tích sâu.  
+   - Dashboard được thiết kế dạng tương tác giúp người dùng phân tích sâu.  
 
 5. **Phân tích nguyên nhân & đề xuất cải tiến (Root Cause & Recommendation)**  
    - Xác định máy hoặc nhóm sản phẩm có hiệu suất thấp.  
