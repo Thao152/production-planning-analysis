@@ -168,15 +168,6 @@ Tuy nhiên, thực tế cho thấy máy ít được vận hành kịp thời do
 ## Dax Formulas
 👉 Xem chi tiết các công thức DAX tại [DAX_formulas.md](./DAX_formulas.md)
 
-
-## 🔍 Phân tích chi tiết
-1. [Delay Analysis](./01.Delay%20Analysis.md)
-2. [Downtime Analysis](./02.Downtime%20Analysis.md)
-3. [Machine Utilization Analysis](./03.Machine%20Utilization%20Analysis.md)
-4. [OTD Analysis](./04.OTD%20analysis.md)
-5. [Capacity Analysis](./05.%20Capacity%20Analysis.md)
-
-
 ---
 
 📅 *Thực hiện bởi:* Nguyễn Thị Phương Thảo 
