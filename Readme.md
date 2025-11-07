@@ -54,7 +54,7 @@ Phân tích được chia thành nhiều module, mỗi module phản ánh một 
 | 4️⃣ **OTD Analysis** | Phân tích tỷ lệ giao hàng đúng hạn (On-time Delivery) | [04.OTD analysis.md](./04.OTD%20analysis.md) |
 | 5️⃣ **Capacity Analysis** | Đánh giá năng lực sản xuất và giới hạn công suất nhà máy | [05. Capacity Analysis.md](./05.%20Capacity%20Analysis.md) |
 **Note:**
-- Phân tích sản lượng chỉ tính cho Ống nhựa trơn.
+- Phân tích sản lượng chỉ tính cho Ống nhựa trơn - là sản phẩm gốc, nền tảng để build các sản phẩm khác.
 - Các phân tích về delay, downtime, OTD mở rộng cho toàn danh mục.
 ---
 
